@@ -1,0 +1,364 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+margin-top: 40px;  
+margin-left: 30px;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background-color: #161616;
+}
+.t{
+margin-left: 45%;
+}
+p{
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.x div{
+margin-top: 20px;
+position: relative;
+}
+
+.c1 {
+position: absolute;
+width: 70px;
+height: 70px;
+transform-style: preserve-3d;
+transform: rotateX(-30deg);
+animation: animate  linear   ;
+animation-duration: 3s;
+animation-fill-mode: forwards ;
+
+}
+.c1 > div {
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+transform-style: preserve-3d;
+}
+
+.c1 > div > span {
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(#050505, cyan);
+transform: rotateY(calc(90deg * var(--i))) translateZ(35px);
+}
+.c1 > div > span:hover {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    
+    background: linear-gradient(#050505,rgba(119, 77, 235, 0.123));
+    transform: rotateY(calc(90deg * var(--i))) translateZ(35px);
+    }
+.top {
+position: absolute;
+inset: 0;
+width: 70px;
+height: 70px;
+background-color: #050505;
+transform: rotateX(90deg) translateZ(35px);
+}
+
+.top::before {
+content: "";
+position: absolute;
+inset: 0;
+width: 70px;
+height: 70px;
+
+transform: translateZ(-380px);
+filter: blur(20px);
+
+}
+
+
+.c2 {
+position: absolute;
+width: 70px;
+height: 70px;
+margin-left: 94%;
+margin-top: 30px;
+transform-style: preserve-3d;
+transform: rotateX(-30deg);
+animation: animate1  linear   ;
+animation-duration: 2s;
+animation-fill-mode: forwards ;
+animation-delay: 3s;
+}
+.c2 > div {
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+transform-style: preserve-3d;
+}
+
+.c2 > div > span {
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(#050505, rgba(0, 255, 255, 0.678));
+transform: rotateY(calc(90deg * var(--i))) translateZ(35px);
+}
+.c2 > div > span:hover {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    
+    background: linear-gradient(#050505,rgba(119, 77, 235, 0.315));
+    transform: rotateY(calc(90deg * var(--i))) translateZ(35px);
+    }
+.c3 {
+position: absolute;
+width: 70px;
+height: 70px;
+transform-style: preserve-3d;
+transform: rotateX(-30deg);
+animation: animate2  linear   ;
+animation-duration: 2s;
+animation-fill-mode: forwards ;
+animation-delay: 5s;
+}
+.c3 > div {
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+transform-style: preserve-3d;
+}
+
+.c3 > div > span {
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(#050505, rgba(36, 233, 233, 0.479));
+transform: rotateY(calc(90deg * var(--i))) translateZ(35px);
+}
+.c3 > div > span:hover {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    
+    background: linear-gradient(#050505, rgba(119, 77, 235, 0.534));
+    transform: rotateY(calc(90deg * var(--i))) translateZ(35px);
+    }
+.c4 {
+position: absolute;
+width: 70px;
+height: 70px;
+margin-left: 94%;
+transform-style: preserve-3d;
+transform: rotateX(-30deg);
+animation: animate3  linear   ;
+animation-duration: 2s;
+animation-fill-mode: forwards ;
+animation-delay: 7s;
+}
+.c4 > div {
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+transform-style: preserve-3d;
+}
+
+.c4 > div > span {
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(#050505, rgba(36, 233, 233, 0.37));
+transform: rotateY(calc(90deg * var(--i))) translateZ(35px);
+}
+.c4 > div > span:hover {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    
+    background: linear-gradient(#050505, rgba(119, 77, 235, 0.712));
+    transform: rotateY(calc(90deg * var(--i))) translateZ(35px);
+    }
+.c5 {
+position: absolute;
+width: 70px;
+height: 70px;
+transform-style: preserve-3d;
+transform: rotateX(-30deg);
+animation: animate4  linear   ;
+animation-duration: 2s;
+animation-fill-mode: forwards ;
+animation-delay: 9s;
+}
+.c5 > div {
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+transform-style: preserve-3d;
+}
+
+.c5 > div > span {
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(#050505, rgba(36, 233, 233, 0.24));
+transform: rotateY(calc(90deg * var(--i))) translateZ(35px);
+}
+.c5 > div > span:hover {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#050505, rgba(119, 77, 235, 0.822));
+    transform: rotateY(calc(90deg * var(--i))) translateZ(35px);
+    }
+.c6 {
+position: absolute;
+width: 70px;
+height: 70px;
+margin-left: 94%;
+transform-style: preserve-3d;
+transform: rotateX(-30deg);
+animation: animate5  linear   ;
+animation-duration: 2s;
+animation-delay: 11s;
+animation-fill-mode: forwards ;
+
+}
+.c6 > div {
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+transform-style: preserve-3d;
+}
+
+.c6 > div > span {
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(#050505, rgba(36, 233, 233, 0.158));
+transform: rotateY(calc(90deg * var(--i))) translateZ(35px);
+animation-name: animation;
+}
+.c6 > div > span:hover {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#050505, rgba(119, 77, 235, 0.959));
+    transform: rotateY(calc(90deg * var(--i))) translateZ(35px);
+    ;
+    }
+@keyframes animate {
+0% {
+transform: rotateX(-30deg) rotateY(0deg);
+}
+25% {left: 0; width: 350px; height: 150px; 
+    transform: rotateY(calc(90deg * var(--i))) translateZ(35px);}
+
+50% {  left: 700px;  ;
+
+}
+100% {
+transform: rotateX(-30deg) rotateY(180deg);
+left: 95% ;animation-timing-function: ease-in-out ;
+
+
+}
+
+}
+@keyframes animate1 {
+0% {
+transform: rotateX(-30deg) rotateY(0deg);
+
+}
+25% {right: 0;  width: 350px; height: 150px; ;
+    transform: rotateY(calc(90deg * var(--i))) translateZ(35px);}
+
+50% {  right:  700px;  }
+
+100% {
+transform: rotateX(-30deg) rotateY(180deg); 
+right:  94% ;animation-timing-function: ease-in;  ;
+
+}
+}
+@keyframes animate2 {
+0% {
+transform: rotateX(-30deg) rotateY(0deg);
+}
+25% {left: 0; width: 150px; height: 150px; 
+    transform: rotateY(calc(90deg * var(--i))) translateZ(125px);}
+
+50% {  left: 700px;  }
+100% {
+transform: rotateX(-30deg) rotateY(180deg);
+left: 95% ;animation-timing-function: ease-in; 
+}
+}
+@keyframes animate3 {
+0% {
+transform: rotateX(-30deg) rotateY(0deg);
+
+}
+25% {right: 0;}
+
+50% {  right:  700px;  width: 250px; height: 250px; border-radius: 40%;
+    transform: rotateY(calc(90deg * var(--i))) translateZ(10S0px); }
+
+100% {
+transform: rotateX(-30deg) rotateY(180deg); 
+right:  94% ;animation-timing-function: ease-in; 
+
+}
+}
+@keyframes animate4 {
+0% {
+transform: rotateX(-30deg) rotateY(0deg);
+}
+25% {left: 0;}
+
+50% {  left: 700px;  width: 250px; height: 250px; 
+    transform: rotateY(calc(90deg * var(--i))) translateZ(50px);  }
+100% {
+transform: rotateX(-30deg) rotateY(180deg);
+left: 95% ;animation-timing-function: ease-in; 
+}
+}
+@keyframes animate5 {
+0% {
+transform: rotateX(-30deg) rotateY(0deg);
+
+}
+25% {right: 0;}
+
+50% {  right:  700px;  width: 150px; height: 150px; 
+    transform: rotateY(calc(90deg * var(--i))) translateZ(35px);
+}
+    
+100% {
+transform: rotateX(-30deg) rotateY(180deg);
+right:  94% ;animation-timing-function: ease-in; 
+
+}
+}
